@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "protobuf/a.proto";
+
+package protobuf;
+
+message SayHelloRequest { protobuf.A a = 1; }
+
+message SayHelloResponse {}
+
+service TestService {
+  rpc SayHello(SayHelloRequest) returns (SayHelloResponse) {}
+}
