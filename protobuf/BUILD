@@ -27,5 +27,6 @@ closure_grpc_library(
 
 closure_grpc_library(
     name = "say_hello_service_closure",
+    transitive = True,
     deps = [":say_hello_service_proto"],
 )
