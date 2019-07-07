@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "protobuf/a.proto";
+
+package experimental.protobuf;
+
+message B {
+  experimental.protobuf.A a = 1;
+  string bar = 2;
+}
