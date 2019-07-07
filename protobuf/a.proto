@@ -1,5 +1,5 @@
 syntax = "proto3";
 
-package experimental.protobuf;
+package protobuf;
 
 message A { string foo = 1; }
