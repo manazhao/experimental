@@ -17,10 +17,10 @@ proto_library(
 
 closure_grpc_library(
     name = "a_closure",
-    deps = ["//protobuf:a_proto"],
+    deps = [":a_proto"],
 )
 
 closure_grpc_library(
     name = "b_closure",
-    deps = ["//protobuf:b_proto"],
+    deps = [":b_proto"],
 )
